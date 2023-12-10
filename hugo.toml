@@ -1,0 +1,4 @@
+baseURL = 'https://markotadic.com/'
+languageCode = 'en-us'
+title = 'Marko Tadić'
+theme = 'ananke'
