@@ -1,0 +1,21 @@
+<!-- custom css -->
+{{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+<!-- custom js -->
+{{ range .Site.Params.custom_js }}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}
+
+<!-- syntax highglighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<!-- on content load -->
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        window["configureCodeBlocks"]();
+    });
+</script>

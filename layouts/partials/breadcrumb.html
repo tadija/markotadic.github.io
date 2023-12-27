@@ -1,0 +1,8 @@
+<ul class="breadcrumb">
+    {{ range .Ancestors.Reverse }}
+        <li><a href="{{ .RelPermalink }}">
+            {{ if .IsHome }} Home {{ else }} {{ .Title }} {{ end }}
+        </a></li>
+    {{ end }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+</ul>

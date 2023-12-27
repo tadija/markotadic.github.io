@@ -1,0 +1,144 @@
+/* custom */
+
+ul {
+    padding-inline-start: 20px;
+}
+
+blockquote {
+    margin-left: 0 !important;
+    margin-right: 0;
+    background-color: #ece9e9;
+    border-left-color: #ff6600 !important;
+    padding: 1px 8px 1px 1px;
+}
+
+/* breadcrumb */
+
+ul.breadcrumb {
+    list-style: none;
+    padding-inline-start: 16px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: small;
+}
+
+ul.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin: 0 0.4rem;
+}
+
+ul.breadcrumb li a {
+    color: grey;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: darkslategray;
+    text-decoration: underline;
+}
+
+/* heading */
+
+a.heading {
+    color: #555;
+    text-decoration: none;
+}
+
+a.heading:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* media */
+
+img.media, video.media {
+    border-radius: 12px;
+}
+
+/* codeblock */
+
+:not(codeblock) code {
+    word-break: break-word;
+}
+
+.codeblock {
+    display: flex;
+    flex-direction: column;
+}
+
+.codeblock > * {
+    margin: 0;
+}
+
+.codeblock pre {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    .codeblock {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .codeblock pre {
+        border-radius: 0;
+    }
+}
+
+.codeblock code {
+    font-family: monospace;
+    max-height: 700px;
+}
+
+.codeblock .code-title {
+    color: #22272e;
+    padding: 0 8px 0 8px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+    text-align: right;
+}
+
+.codeblock .copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: #21262d;
+    border: 1px solid #444a52;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.codeblock .copy-button svg {
+    fill: #848d97;
+    padding: 11px;
+}
+
+.codeblock .copy-button:hover {
+    background-color: #30363d;
+    border: 1px solid #8b949e;
+}
+.codeblock .copy-button:active {
+    background-color: #282e33;
+}
+
+.codeblock .copy-button.success {
+    border: 1px solid #238636;
+}
+.codeblock .copy-button.success svg {
+    fill: #40b951;
+}
+
+.codeblock .copy-button.error {
+    border: 1px solid #BF3131;
+}
+.codeblock .copy-button.error svg {
+    fill: #C70039;
+}
