@@ -1,0 +1,10 @@
+title = "Marko Tadić"
+baseURL = "https://markotadic.com/"
+languageCode = "en-us"
+theme = "ananke"
+
+Paginate = 30
+pluralizeListTitles = false
+
+enableRobotsTXT = true
+googleAnalytics = "G-5Q5THBGQ2B"

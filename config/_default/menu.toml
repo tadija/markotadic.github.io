@@ -1,0 +1,14 @@
+[[main]]
+    name = "Apps"
+    url = "/apps"
+    weight = 10
+
+[[main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 20
+
+[[main]]
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 30

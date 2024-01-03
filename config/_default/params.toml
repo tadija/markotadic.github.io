@@ -1,0 +1,17 @@
+author = "Marko Tadić"
+mainSections = ['apps', 'blog', 'portfolio']
+
+site_logo = "img/memoji.png"
+images = [ "img/memoji.png" ]
+
+background_color_class = "bg-near-black"
+body_classes = "avenir bg-near-white"
+post_content_classes = "avenir bg-near-white"
+recent_copy = "Recent Posts"
+
+ananke_socials = [
+	{ name = "stackoverflow", url = "https://stackoverflow.com/users/2165585/tadija" },
+	{ name = "github", url = "https://github.com/tadija" },
+	{ name = "linkedin", url = "https://www.linkedin.com/in/tadija" },
+]
+disable_share = true
